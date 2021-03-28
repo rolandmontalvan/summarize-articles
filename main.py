@@ -1,12 +1,13 @@
 import tkinter as tk
 import nltk
 from textblob import TextBlob
-from newspaper import article
+from newspaper import Article
+
+nltk.download('punkt')
 
 url = 'https://edition.cnn.com/2020/09/13/tech/microsoft-tiktok-bytedance/index.html'
 
 article = Article(url)
-
 article.download()
 article.parse()
 article.nlp()
