@@ -1,10 +1,11 @@
+import tkinter
 import nltk
 from textblob import TextBlob
 from newspaper import Article
 
 nltk.download('punkt')
 
-url = 'https://edition.cnn.com/2020/09/13/tech/microsoft-tiktok-bytedance/index.html'
+url = 'http://www.sciencedirect.com/science/article/pii/S0040162515002942'
 
 article = Article(url)
 article.download()
