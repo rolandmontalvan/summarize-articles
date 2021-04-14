@@ -7,7 +7,7 @@ from googletrans import Translator
 translator = Translator()
 nltk.download('punkt')
 
-url = 'https://www.sciencedirect.com/science/article/pii/S1084804516000928#f0005'
+url = 'https://www.sciencedirect.com/science/article/pii/S2352146515003142'
 
 article = Article(url)
 article.download()
@@ -28,12 +28,12 @@ text =  translator.translate(text, dest='pt', src='auto')
 
 print(f'Title: {article.title}')
 print(f'Título: {title.text}')
-print(f'Authors: {article.authors}')
-print(f'Publication Date: {article.publish_date}')
-print(f'Summary: {article.summary}')
-print(f'Resumo: {summary.text}')
-print(f'Text: {article.text}')
-print(f'Texto: {text.text}')
+print(f'\nAuthors: {article.authors}')
+print(f'\nPublication Date: {article.publish_date}')
+print(f'\nSummary: {article.summary}')
+print(f'\nResumo: {summary.text}')
+print(f'\nText: {article.text}')
+print(f'\nTexto: {text.text}')
 
 
 """
