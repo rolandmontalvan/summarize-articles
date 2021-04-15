@@ -7,7 +7,7 @@ from googletrans import Translator
 translator = Translator()
 nltk.download('punkt')
 
-url = 'https://www.sciencedirect.com/science/article/pii/S2352146515003142'
+url = 'https://www.sciencedirect.com/science/article/pii/S1084804516000928'
 
 article = Article(url)
 article.download()
